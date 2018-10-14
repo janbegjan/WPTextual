@@ -26,3 +26,12 @@ function wptextual_assets(){
   wp_enqueue_script('wptextual-mainjs', get_theme_file_uri('/assets/js/main.js' ), array('jquery'), time(), true);
 }
 add_action('wp_enqueue_scripts', 'wptextual_assets');
+
+/**
+* Adding B4 list-inline-item Class to menus.
+*/
+function wptextual_menu_item_class($classes, $item){
+$classes[] = 'list-inline-item';
+return $classes;
+}
+add_filter( 'nav_menu_css_class', 'wptextual_menu_item_class', 10, 2 );
