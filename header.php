@@ -17,7 +17,7 @@
 <!-- header -->
 <header class="header" style="background: url(<?php echo get_header_image(); ?>) no-repeat scroll 50% 50%/cover;">
     <div class="logo text-center">
-        <h1><a href="<?php echo home_url(); ?>"> <img src="<?php echo get_theme_file_uri('/assets/images/logo.png'); ?>" alt="Textual"></a></h1>
+        <h1 class='text-uppercase'><a class='header_title_text' href="<?php echo home_url(); ?>"><?php bloginfo('title'); ?></a></h1>
         <p><?php bloginfo('description'); ?></p>
     </div>
 </header>
