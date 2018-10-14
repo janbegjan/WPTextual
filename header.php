@@ -15,7 +15,7 @@
     <div class="st-preloader-circle"></div>
 </div>
 <!-- header -->
-<header class="header">
+<header class="header" style="background: url(<?php echo get_header_image(); ?>) no-repeat scroll 50% 50%/cover;">
     <div class="logo text-center">
         <h1><a href="index.html"> <img src="<?php echo get_theme_file_uri('/assets/images/logo.png'); ?>" alt="Textual"></a></h1>
         <p>A Content base Handcrafted Bootstrap Theme</p>

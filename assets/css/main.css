@@ -137,11 +137,12 @@ h6 {
 header/home
 ------------------------------------------*/
 header.header {
-    background: url(assets/images/header-bg.jpg) no-repeat scroll 50% 50%;
+    background-position: 50% 50%;
     background-size: cover;
     position: relative;
     padding: 160px 0 150px;
-    z-index: 1;
+    z-index: 1;   
+    
 }
 
 header.header:after, .single-home-area:after {
