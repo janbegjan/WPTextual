@@ -6,7 +6,7 @@
             <div class="col-md-8">
                 <!-- start post -->
                 <article class="post">
-                    <a href="single-post.html"><img src="assets/images/blog-1.jpg" alt=""></a>
+                    <a href="single-post.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog-1.jpg'); ?>" alt=""></a>
                     <div class="post-content">
                         <div class="post-header">
                             <h2><a href="">Winter Tour at Kasmir, Pakistan </a> <span
@@ -29,7 +29,7 @@
                 <!-- end post -->
                 <!-- start post -->
                 <article class="post">
-                    <a href="single-post.html"><img src="assets/images/blog-2.jpg" alt=""></a>
+                    <a href="single-post.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog-2.jpg'); ?>" alt=""></a>
                     <div class="post-content">
                         <div class="post-header">
                             <h2><a href="">Sea Beach Waves Surfing with Martin </a> <span
@@ -52,7 +52,7 @@
                 <!-- end post -->
                 <!-- start post -->
                 <article class="post">
-                   <a href="single-post.html"><img src="assets/images/blog-3.jpg" alt=""></a>
+                   <a href="single-post.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog-3.jpg'); ?>" alt=""></a>
                     <div class="post-content">
                         <div class="post-header">
                             <h2><a href="">Amazing Journey to South Africa </a> <span

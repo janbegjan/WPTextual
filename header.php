@@ -20,7 +20,7 @@
 <!-- header -->
 <header class="header">
     <div class="logo text-center">
-        <h1><a href="index.html"> <img src="assets/images/logo.png" alt="Textual"></a></h1>
+        <h1><a href="index.html"> <img src="<?php echo get_theme_file_uri('/assets/images/logo.png'); ?>" alt="Textual"></a></h1>
         <p>A Content base Handcrafted Bootstrap Theme</p>
     </div>
 </header>
