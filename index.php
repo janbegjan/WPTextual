@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Page Title -->
     <title>Textual - A Content base Handcrafted Bootstrap Template </title>
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/font-awesome.min.css' )?>">
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/main.css') ?>">
 </head>
 <body>
 <!-- pre-loader -->
@@ -191,8 +191,8 @@
     </div>
 </footer>
 <!-- end footer area -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="<?php echo get_theme_file_uri('/assets/js/jquery.min.js') ?>"></script>
+<script src="<?php echo get_theme_file_uri('/assets/js/bootstrap.min.js') ?>"></script>
+<script src="<?php echo get_theme_file_uri('/assets/js/main.js') ?>"></script>
 </body>
 </html>
