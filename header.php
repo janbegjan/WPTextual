@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes()?>>
 <head>
     <!-- Document Settings -->
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Page Title -->
-    <title>Textual - A Content base Handcrafted Bootstrap Template </title>
-    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/font-awesome.min.css' )?>">
-    <!-- Styles -->
-    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/assets/css/main.css') ?>">
+
+<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 <!-- pre-loader -->
 <div id="st-preloader">
     <div class="st-preloader-circle"></div>

@@ -1,4 +1,5 @@
-$(document).ready(function () {
+
+;(function ($) {
     "use strict";
 
     /* === pre-loader init === */
@@ -69,6 +70,7 @@ $(document).ready(function () {
         animation: 'fade'
     });
 
-});
+}(jQuery));
+
 
 

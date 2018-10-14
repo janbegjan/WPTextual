@@ -25,8 +25,6 @@
     </div>
 </footer>
 <!-- end footer area -->
-<script src="<?php echo get_theme_file_uri('/assets/js/jquery.min.js') ?>"></script>
-<script src="<?php echo get_theme_file_uri('/assets/js/bootstrap.min.js') ?>"></script>
-<script src="<?php echo get_theme_file_uri('/assets/js/main.js') ?>"></script>
+<?php wp_footer(); ?>
 </body>
 </html>
