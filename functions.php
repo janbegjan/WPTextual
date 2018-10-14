@@ -36,3 +36,19 @@ $classes[] = 'list-inline-item';
 return $classes;
 }
 add_filter( 'nav_menu_css_class', 'wptextual_menu_item_class', 10, 2 );
+
+/**
+* Add Right sidebar register.
+*/
+function wptextual_register_sidebar() {
+  register_sidebar( array(
+  'name'          => __( 'Right Sidebar', 'wptextual' ),
+  'id'            => 'sidebar_right',
+  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'wptextual' ),
+  'before_widget' => '<aside id="%1s" class="widget %2s"><div class="social-share">',
+  'after_widget'  => '</div></aside>',
+  'before_title'  => '<h3 class="widget-title text-uppercase">',
+  'after_title'   => '</h3>',
+  ));
+}
+add_action( 'widgets_init', 'wptextual_register_sidebar' );

@@ -44,41 +44,7 @@
 
             </div>
             <div class="col-md-4">
-                <!-- start sidebar -->
-                <div class="sidebar">
-                    <aside class="widget"><!-- start single widget -->
-                        <div class="social-share">
-                            <h3 class="widget-title text-uppercase">Subscribe & Follow</h3>
-                            <ul class="">
-                                <li><a class="s-facebook" href=""><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="s-twitter" href=""><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="s-google-plus" href=""><i class="fa fa-google-plus"></i></a></li>
-                                <li><a class="s-linkedin" href=""><i class="fa fa-linkedin"></i></a></li>
-                                <li><a class="s-instagram" href=""><i class="fa fa-instagram"></i></a></li>
-                                <li><a class="s-behance" href=""><i class="fa fa-behance"></i></a></li>
-                                <li><a class="s-tumblr" href=""><i class="fa fa-tumblr"></i></a></li>
-                            </ul>
-                        </div>
-                    </aside><!-- end single widget -->
-                    <aside class="widget"><!-- start single widget -->
-                        <div class="social-share">
-                            <h3 class="widget-title text-uppercase">About Me </h3>
-    
-                            <p>Meh synth Schlitz, tempor duis gin coffee ea next level ethnic fingerstache fanpack
-                                nostrud. Photo booth anim 8-bit hellpber 3 wolf moon beard Helvetica. </p>
-                        </div>
-                     </aside>   
-
-
-                    <aside class="widget ">
-                        <h3 class="widget-title text-uppercase">Search </h3>
-                        <form method="get" id="" action="#">
-                            <input type="text" placeholder="Search here..." name="s" id="s">
-                            <button type="submit" class="submit-btn">Search</button>
-                        </form>
-                    </aside>
-                </div>
-                <!-- end sidebar -->
+                <?php get_sidebar(); ?>
             </div>
         </div>
     </div>
