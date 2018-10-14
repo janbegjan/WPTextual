@@ -50,5 +50,14 @@ function wptextual_register_sidebar() {
   'before_title'  => '<h3 class="widget-title text-uppercase">',
   'after_title'   => '</h3>',
   ));
+  register_sidebar( array(
+  'name'          => __( 'Footer Sidebar', 'wptextual' ),
+  'id'            => 'sidebar_footer',
+  'description'   => __( 'Widgets in this area will be shown on all posts and pages.', 'wptextual' ),
+  'before_widget' => '',
+  'after_widget'  => '',
+  'before_title'  => '',
+  'after_title'   => '',
+  ));
 }
 add_action( 'widgets_init', 'wptextual_register_sidebar' );
