@@ -25,7 +25,7 @@
                             }
                           ?>
                           <div class="continue-reading text-uppercase">
-                              <a href="<?php echo get_the_permalink(); ?>" class="more-link text-center">Continue Reading</a>
+                              <a href="<?php echo get_the_permalink(); ?>" class="more-link text-center"><?php _e('Continue Reading', 'wptextual'); ?></a>
                           </div>
                       </div>
                   </div>
@@ -34,12 +34,14 @@
               <?php endwhile; ?>
                 <!--pagination-->
                 <div class="post-pagination text-center">
-                    <ul class="pagination">
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">Next</a></li>
-                    </ul>
+                <?php 
+                  the_posts_pagination( array(
+                  'mid_size' => 2,
+                  'screen_reader_text' => ' ',
+                  'prev_text' => __( 'Newer', 'wptextual' ),
+                  'next_text' => __( 'Older', 'wptextual' ),
+                )); ?> 
+
                 </div>
 
             </div>
