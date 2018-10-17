@@ -18,11 +18,7 @@
                       </div>
                       <div class="entry-content">
                           <?php 
-                            if(is_single()){
-                              the_content();
-                            }else{
-                              the_excerpt();
-                            }
+                            the_excerpt();
                           ?>
                           <div class="continue-reading text-uppercase">
                               <a href="<?php echo get_the_permalink(); ?>" class="more-link text-center"><?php _e('Continue Reading', 'wptextual'); ?></a>
