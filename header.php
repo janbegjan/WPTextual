@@ -17,7 +17,16 @@
 <!-- header -->
 <header class="header" style="background: url(<?php echo get_header_image(); ?>) no-repeat scroll 50% 50%/cover;">
     <div class="logo text-center">
-        <h1 class='text-uppercase'><a class='header_title_text' href="<?php echo home_url(); ?>"><?php bloginfo('title'); ?></a></h1>
+
+        <?php 
+          $custom_logo_id = get_theme_mod( 'custom_logo' );
+          $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+          if ( has_custom_logo() ) {
+            echo '<img src="'. esc_url( $logo[0] ) .'">';
+          }else {
+            echo '<h1 class="text-uppercase"><a class="header_title_text" href="' .get_home_url(). '">' .get_bloginfo( 'title' ). '</a></h1>';
+          }
+        ?>
         <p><?php bloginfo('description'); ?></p>
     </div>
 </header>
@@ -36,14 +45,8 @@
             'menu_class'				=>	'nav navbar-nav navbar-center',
             ));
         ?>
-        
-            <!-- <ul class="nav navbar-nav navbar-center">
-                <li class="list-inline-item"><a href="/alpha">Home</a></li>
-                <li class="list-inline-item"><a href="/alpha">About</a></li>
-                <li class="list-inline-item"><a href="/alpha">Blog</a></li>
-                <li class="list-inline-item"><a href="/alpha">Contact</a></li>
-            </ul> -->
         </div>
     </div>
 </nav>
 <!-- end main menu -->
+

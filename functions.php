@@ -7,6 +7,7 @@ function wptextual_bootstrapping(){
   add_theme_support( 'title-tag' );
   add_theme_support( 'post-thumbnails' );
   add_theme_support( 'custom-header' );
+  add_theme_support( 'custom-logo' );
   add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'audio', 'video','image' ) );
   register_nav_menu('Top_menu', __('Top menu', 'wptextual'));
   register_nav_menu('Footer_menu', __('Footer menu', 'wptextual'));
